@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title> </title>
+    <style>
+      body {
+        overflow: hidden; 
+        margin: auto;
+        width: 66%;
+        background-image:url("bg.jpeg");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      h1 {
+        font-style: italic;
+        text-align: center;
+        color: white;
+      }
+      canvas {
+        width: 100%;
+        background-color: green;
+      }
+      main {
+        display: flex;
+        padding: 1rem;
+        background-color: beige;
+      }
+      form {
+        min-width: 25%;
+        display: flex;
+        flex-direction: column;
+        background-color: beige;
+      }
+      form > * {
+        margin: 0.5rem;
+      }
+      #canvas{
+        display: flex;
+        flex-direction: column;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <h1> Versus </h1>
+    <main>
+      <form id="red">
+        <div>Time 1</div>
+        <input type="number" name="goalSizeRed" id="goalSizeRed" placeholder="Tamanho da trave">
+        <input type="number" name="ballCountRed" id="ballCountRed" placeholder="Quantidade de bolas">
+        <input type="number" name="ballVellRed" id="ballVellRed" placeholder="Velocidade das bolas">
+        <input type="button" value="Definir" id="buttonRed">
+        <div>
+          Pontuação Red:
+          <span id="team_red"></span>
+        </div>
+      </form>
+      <div id="canvas">
+        <canvas></canvas>
+        <input type="button" value="start" id="buttonStart">
+      </div>
+      <form id="blue">
+          <div>Time 2</div>
+
+          <input type="number" name="goalSizeBlue" id="goalSizeBlue" placeholder="Tamanho da trave">
+          <input type="number" name="ballCountBlue" id="ballCountBlue" placeholder="Quantidade de bolas">
+          <input type="number" name="ballVellBlue" id="ballVellBlue" placeholder="Velocidade das bolas">
+          <input type="button" value="Definir" id="buttonBlue">
+          <div>
+            Pontuação Azul:
+            <span id="team_blue"></span>
+        </form>
+      </form>
+    </main>
+    
+
+    <script src="main.js"></script>
+  </body>
+</html>
