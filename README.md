@@ -1,7 +1,7 @@
 # Projeto Javascript
 
 
-1 - Nos formulários dos times, crie um campo de entrada para aumentar o tamanho das traves. Esta configuraçao deverá ser definida via elemento **input** e deverá ser acionada ao selecionar um botão, fazendo a trave aumentar e diminuir de tamanho. 
+1. Nos formulários dos times, crie um campo de entrada para aumentar o tamanho das traves. Esta configuraçao deverá ser definida via elemento **input** e deverá ser acionada ao selecionar um botão, fazendo a trave aumentar e diminuir de tamanho. 
 
 ```html
  <form id="red">
@@ -31,7 +31,7 @@ class Team {
 }
 ```
 
-2 - Nos formulários dos times acrescente um campo de entrada do tipo **input** para definir a quantidade de bolas e a velocidade de bolas de determinado time. Estes valores devem ser utilizados para definir propriedades dos times (instancia **Team**) e usados ao criar uma bola (instancia de **Ball**).
+2. Nos formulários dos times acrescente um campo de entrada do tipo **input** para definir a quantidade de bolas e a velocidade de bolas de determinado time. Estes valores devem ser utilizados para definir propriedades dos times (instancia **Team**) e usados ao criar uma bola (instancia de **Ball**).
 
 Ao definir estes valores por meio do acionamento do botão, altere a criação de bolas na função **start()**
 
@@ -49,13 +49,13 @@ class Ball {
 }
 ```
 
-3 - Organização e documentaão:
+3. Organização e documentaão:
   1 - Organize a base de código para utilizar módulos ESM, com multiplos arquivos usando import e export.
   2 - Faça a documentação das funções e classes utilizando padrão [jsdoc](https://jsdoc.app/about-getting-started)
 
-4 - Crie um botão reset para reiniciar o jogo com as configurações padrão:
-  1 - Tamanho da trave - 100
-  2 - Apenas uma bola por time
-  3 - Velocidade da bola - 10
+4. Crie um botão reset para reiniciar o jogo com as configurações padrão:
+  1. Tamanho da trave - 100
+  2. Apenas uma bola por time
+  3. Velocidade da bola - 10
 
-5 - Quando uma bola de um time fizer o gol, remova a bola da tela. Para isso, você deve verificar no array a posição da bola e a remover do array para não ser mais utilizada na animação de pintura.
+5. Quando uma bola de um time fizer o gol, remova a bola da tela. Para isso, você deve verificar no array a posição da bola e a remover do array para não ser mais utilizada na animação de pintura.
