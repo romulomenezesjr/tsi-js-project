@@ -20,8 +20,6 @@ class Ball {
     this.velX = velX;
     this.velY = velY;
     this.color = color;
-    this.size = size;
-    this.points = 0
   }
 
   draw() {
@@ -58,16 +56,14 @@ class Ball {
       (this.y - this.size > goal1.y && this.y < goal1.y + goal1.h) &&
       this.color !== goal1.color
     ){
-      goal2.points++
-      document.querySelector("#team_blue").innerHTML = goal2.points
+      console.log("gol")
     }
 
     if (this.x - this.size >  goal2.x && 
       (this.y - this.size > goal2.y && this.y < goal1.y + goal1.h ) &&
       this.color !== goal2.color
     ){
-      goal1.points ++
-      document.querySelector("#team_red").innerHTML = goal1.points
+      console.log("gol")
     }
   }
 }
@@ -80,8 +76,6 @@ class Team {
     this.w = w
     this.h = h
     this.color = color
-    this.points = 0
-    this.balls_count = 1
   }
 
   draw() {
@@ -93,18 +87,6 @@ class Team {
 const balls = [];
 let team_red = new Team(0, height/2 - 50, 30, 100, "red")
 let team_blue = new Team(width - 30, height/2 - 50, 30, 100, "blue")
-
-
-const buttonStart = document.querySelector("#buttonStart")
-buttonStart.addEventListener("click", start)
-
-const buttonBlue = document.querySelector("#buttonBlue")
-
-buttonBlue.addEventListener("click", ()=>{
-  team_blue.balls_count = document.querySelector("#ballCountBlue").value
-})
-
-const buttonRed = document.querySelector("#buttonRed")
 
 
 function start(){
